@@ -1,6 +1,134 @@
 ---
-title: Welcome to your new web page!
+title: Main
 ---
 
-.content
-  p =lorem.paragraph
+/! camera slider
+.container.offset-top-xl
+  #camera_wrap_1.camera_wrap.camera_white_skin
+    div data-src="assets/images/slides/bridge.jpg" data-thumb="assets/images/slides/thumbs/bridge.jpg"
+      .camera_caption.fadeFromBottom
+        | Camera is a responsive/adaptive slideshow.
+        em Try to resize the browser window
+    div data-src="assets/images/slides/leaf.jpg" data-thumb="assets/images/slides/thumbs/leaf.jpg"
+      .camera_caption.fadeFromBottom
+        | It uses a light version of jQuery mobile,
+        em navigate the slides by swiping with your fingers
+    div data-src="assets/images/slides/road.jpg" data-thumb="assets/images/slides/thumbs/road.jpg"
+      .camera_caption.fadeFromBottom
+        em It's completely free
+        | (even if a donation is appreciated)
+    div data-src="assets/images/slides/sea.jpg" data-thumb="assets/images/slides/thumbs/sea.jpg"
+      .camera_caption.fadeFromBottom
+        | Camera slideshow provides many options
+        em to customize your project
+        | as more as possible
+    div data-src="assets/images/slides/shelter.jpg" data-thumb="assets/images/slides/thumbs/shelter.jpg"
+      .camera_caption.fadeFromBottom
+        | It supports captions, HTML elements and videos and
+        em it's validated in HTML5
+        | (
+        a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.pixedelic.com%2Fplugins%2Fcamera%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.2" target="_blank"
+        | )
+    div data-src="assets/images/slides/tree.jpg" data-thumb="assets/images/slides/thumbs/tree.jpg"
+      .camera_caption.fadeFromBottom
+        | Different color skins and layouts available,
+        em fullscreen ready too
+/! end camera slider
+/! content area
+.container
+  /! welcome text
+  .row-fluid align="center"
+    hr
+      h4 Responsive Blog and Portfolio Design
+      p
+        | Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. Maecenas tincidunt ornare tellus, a mollis dui venenatis quis.
+      hr
+  /! end welcome text
+  /! row for images
+  .row-fluid.offset-both
+    .span3
+      .offset-bottom
+        = image_tag 'slides/big_bunny_fake.jpg'
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
+    .span3
+      .offset-bottom
+        = image_tag 'slides/big_bunny_fake.jpg'
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
+    .span3
+      .offset-bottom
+        = image_tag 'slides/big_bunny_fake.jpg'
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
+    .span3
+      .offset-bottom
+        = image_tag 'slides/big_bunny_fake.jpg'
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
+
+  .row-fluid.offset-both
+    /! column one infobox
+    .span6
+      h4 Headline
+      hr
+        div
+          .span6
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitu.
+            p
+              | Metus vitae urna sollicitudin eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lor pera adomrar dolor libadon se cule padore a folodurento.
+          .span6
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Pellentesque eu posuere leo.
+              | Pellentesque a Design erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
+              | Maecenas vel metus vitae urna sollicitudin eleifend.
+            a href="#"
+    /! end column one infobox
+    /! column two quotes
+    .span6
+      h4 Client Testimonials
+      hr
+        blockquote
+          em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
+          small
+            b Peter Salt
+            cite title="Source Title"
+        blockquote
+          em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
+          small
+            b Peter Salt
+            cite title="Source Title"
+        blockquote
+          em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
+          small
+            b Peter Salt
+            cite title="Source Title"
+    /! end column two quotes
+/! end content area
+
+/script src="js/jquery-1.8.0.min.js"
+/script src="js/jquery-ui-1.9.0.custom.min.js"
+/script src="js/bootstrap.min.js"
+/script src="js/selectnav.min.js"
+/script src="js/jquery-easing.js"
+/script src="js/jquery.lavalamp.min.js"
+/script src="js/jquery.mobile.customized.min.js"
+/script src="js/camera.min.js"
+/script src="js/hoverIntent.js"
+/script src="js/jquery.isotope.min.js"
+/script src="js/jquery.animate-shadow-min.js"
+/script src="js/bootstrap-datepicker.js"
+/script src="js/jquery.validate.min.js"
+/script src="js/additional-methods.min.js"
+/script src="js/jquery.colorbox-min.js"
+/script src="js/jquery.bxslider.min.js"
+/script src="js/modernizr.custom.97074.js"
+/script src="js/jquery.hoverdir.js"
+/script src="js/standard.js"
+/javascript:
+/  /!/ The twitter accounts that will be included in the ticker
+/  | var tweetUsers = ['speckyboy'];
+/        script src="js/jquery-twitter.js"

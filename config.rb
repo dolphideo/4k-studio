@@ -42,7 +42,7 @@ activate :livereload
 # Asset Settings
 set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
-set :images_dir, 'assets/img'
+set :images_dir, 'assets/images'
 
 # Add bower's directory to sprockets asset path
 after_configuration do

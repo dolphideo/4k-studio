@@ -1,1 +1,71 @@
-header Its the Header!
+.container-fluid.sf_nav
+  .navbar.navbar-static-top
+    .navbar-inner
+      .container
+        /! .btn-navbar is used as the toggle for collapsed navbar content
+        /!
+          | <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          | <span class="icon-bar"></span>
+          | <span class="icon-bar"></span>
+          | <span class="icon-bar"></span>
+          | </a>
+        /! Be sure to leave the brand out there if you want it shown
+        a.brand.myBrand href="index.html"
+          = image_tag src="jodstrap-logo.png"
+        /! Everything you want hidden at 940px or less, place within here
+        /! <div class="nav-collapse">
+        ul#sf-menu-responsive.nav.pull-right.sf_navmenu.navanimation.sf-menu.hidden-phone
+          li#home.Lava.selectedLava
+            a href="index.html"
+              | Home
+              span
+                span.hidden-desktop> -
+                | homepage
+          li#portfolio.Lava.open-submenu
+            a href="portfolio.html"
+              | Portfolio
+              span
+                span.hidden-desktop> -
+                | our products
+            ul.navsub.noLava
+              li.noLava
+                a href="portfolio.html"
+              li.noLava
+                a href="portfolio2.html"
+          li#blog.Lava
+            a href="blog.html"
+              | Blog
+              span
+                span.hidden-desktop> -
+                | our blog
+          li#features.Lava.open-submenu
+            a href="features.html"
+              | Features
+              span
+                span.hidden-desktop> -
+                | colors & buttons
+            ul.navsub.noLava
+              li.noLava
+                a href="features.html#sf-typography"
+              li.noLava
+                a href="features.html#sf-icons"
+              li.noLava
+                a href="features.html#sf-form-validation"
+              li.noLava
+                a href="features.html#sf-buttons"
+              li.noLava
+                a href="features.html#sf-alerts"
+              li.noLava
+                a href="features.html#sf-tabs"
+              li.noLava
+                a href="features.html#sf-table"
+              li.noLava
+                a href="features.html#sf-tooltips"
+              li.noLava
+                a href="features.html#sf-popover"
+          li#contacts.Lava
+            a href="contacts.html"
+              | Contacts
+              span
+                span.hidden-desktop> -
+                | mail us
