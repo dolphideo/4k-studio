@@ -1,5 +1,5 @@
 def page_title
-  title = "Middleman" #Set site title here
+  title = "Dolphideo" #Set site title here
 
   if data.page.title
     title << " | " + data.page.title
@@ -9,7 +9,7 @@ def page_title
 end
 
 def page_description
-  description = "A Static Site Generator" # Set site description here
+  description = "Twój Klip Video" # Set site description here
 
   if data.page.description
     description = data.page.description

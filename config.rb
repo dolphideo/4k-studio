@@ -90,3 +90,10 @@ end
 #   deploy.password = "ftp-password"
 #   deploy.path = "ftp-path"
 # end
+
+# github pages deployment configuration
+activate :deploy do |deploy|
+  deploy.build_before = true # default: false
+  deploy.method = :git
+  deploy.branch = "master"
+end
