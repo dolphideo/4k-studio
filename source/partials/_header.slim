@@ -4,68 +4,24 @@
       .container
         /! .btn-navbar is used as the toggle for collapsed navbar content
         /!
-          | <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          | <span class="icon-bar"></span>
-          | <span class="icon-bar"></span>
-          | <span class="icon-bar"></span>
-          | </a>
-        /! Be sure to leave the brand out there if you want it shown
-        a.brand.myBrand href="index.html"
-          = image_tag src="jodstrap-logo.png"
+        /a.btn.btn-navbar data-toggle="collapse" data-target=".nav-collapse"
+        /  span.icon-bar
+        /  span.icon-bar
+        /  span.icon-bar
+        = link_to "index.html", class: "brand myBrand" do
+          = image_tag src="dolphideo-logo.png"
         /! Everything you want hidden at 940px or less, place within here
-        /! <div class="nav-collapse">
+        /div.nav-collapse
         ul#sf-menu-responsive.nav.pull-right.sf_navmenu.navanimation.sf-menu.hidden-phone
-          li#home.Lava.selectedLava
-            a href="index.html"
-              | Home
-              span
-                span.hidden-desktop> -
-                | homepage
-          li#portfolio.Lava.open-submenu
-            a href="portfolio.html"
-              | Portfolio
-              span
-                span.hidden-desktop> -
-                | our products
-            ul.navsub.noLava
-              li.noLava
-                a href="portfolio.html"
-              li.noLava
-                a href="portfolio2.html"
+          li#o_nas.Lava.selectedLava
+            = main_menu_item "O nas", "/index.html", "nasz profil"
+          li#portfolio.Lava
+            = main_menu_item "Portfolio", "/portfolio.html", "jaki opis?"
+          li#cennik.Lava
+            = main_menu_item "Cennik", "/cennik.html", "jaki opis?"
+          li#ekipa.Lava
+            = main_menu_item "Ekipa", "/ekipa.html", "jaki opis?"
           li#blog.Lava
-            a href="blog.html"
-              | Blog
-              span
-                span.hidden-desktop> -
-                | our blog
-          li#features.Lava.open-submenu
-            a href="features.html"
-              | Features
-              span
-                span.hidden-desktop> -
-                | colors & buttons
-            ul.navsub.noLava
-              li.noLava
-                a href="features.html#sf-typography"
-              li.noLava
-                a href="features.html#sf-icons"
-              li.noLava
-                a href="features.html#sf-form-validation"
-              li.noLava
-                a href="features.html#sf-buttons"
-              li.noLava
-                a href="features.html#sf-alerts"
-              li.noLava
-                a href="features.html#sf-tabs"
-              li.noLava
-                a href="features.html#sf-table"
-              li.noLava
-                a href="features.html#sf-tooltips"
-              li.noLava
-                a href="features.html#sf-popover"
-          li#contacts.Lava
-            a href="contacts.html"
-              | Contacts
-              span
-                span.hidden-desktop> -
-                | mail us
+            = main_menu_item("Blog", "/blog.html", "nasz blog")
+          li#kontakt.Lava
+            = main_menu_item("Kontakt", "/kontakt.html", "zadzwoń lub napisz")

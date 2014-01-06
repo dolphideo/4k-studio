@@ -4,6 +4,9 @@ set :markdown_engine, :redcarpet
 #Livereload
 activate :livereload
 
+# links style
+activate :directory_indexes
+
 ###
 # Compass
 ###
@@ -96,4 +99,10 @@ activate :deploy do |deploy|
   deploy.build_before = true # default: false
   deploy.method = :git
   deploy.branch = "master"
+end
+
+helpers do
+  def main_menu_item(name, link, description)
+    link_to "#{name}<span><span class='hidden-desktop'>-</span>#{description}</span>", link
+  end
 end
