@@ -1,6 +1,5 @@
-#= require vendor/jquery-1.8.0.min
-#= require vendor/jquery-ui-1.9.0.custom.min
-#= require vendor/bootstrap
+# jquery and jquery.ui loaded from CDN
+#= require vendor/bootstrap.min
 #= require vendor/selectnav.min
 #= require vendor/jquery-easing
 #= require vendor/jquery.lavalamp.min

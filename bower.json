@@ -1,9 +1,8 @@
 {
-  "name": "middleman",
+  "name": "dolphideo.github.io",
   "version": "0.0.0",
   "dependencies": {
     "jquery": "~1.8",
-    "normalize-scss": "~2.1",
-    "modernizr": "~2.6.2"
+    "normalize-scss": "~2.1"
   }
 }
