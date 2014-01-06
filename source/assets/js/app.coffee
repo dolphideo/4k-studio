@@ -1,4 +1,7 @@
 # jquery and jquery.ui loaded from CDN
+#= require vendor/tmp/jquery-1.8.3.min
+#= require vendor/tmp/jquery-ui.min
+# temporary downloaded
 #= require vendor/bootstrap.min
 #= require vendor/selectnav.min
 #= require vendor/jquery-easing
