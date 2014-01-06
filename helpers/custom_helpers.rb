@@ -5,7 +5,7 @@ end
 def portfolio_tags
   tags = []
   data.portfolio.list.each do |f|
-    f.tags.each {|ff| tags << ff }
+    tags = tags | f.tags
   end
-  tags.uniq!
+  tags
 end
