@@ -9,5 +9,4 @@ gem "middleman-livereload"
 gem "middleman-deploy"
 
 gem "slim"
-
 gem "redcarpet"

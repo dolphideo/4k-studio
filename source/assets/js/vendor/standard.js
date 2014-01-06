@@ -27,14 +27,12 @@ $(document).ready(function() {
 
 	// camera slider options:
 	if ($('#camera_wrap_1').length > 0) {
-    console.log('camera almost initialized');
     $('#camera_wrap_1').camera({
 			thumbnails : true,
 			height : '35%',
 			loader : 'none',
 			opacityOnGrid : false,
 			onLoaded : function() {
-        console.log('camera loaded!');
 			}
 		});
 	}
