@@ -3,74 +3,19 @@
     .span12
       ul#da-filters.sf-da-isotope-filters
         li.active
-          a data-filter="*" href="#"
-        li
-          a data-filter=".people" href="#"
-        li
-          a data-filter=".woman" href="#"
-        li
-          a data-filter=".nature" href="#"
-        li
-          a data-filter=".rest" href="#"
+          a data-filter="*" href="#" ALL
+        - portfolio_tags.each do |f|
+          li
+            a data-filter=".#{f}" href="#" = f
       hr
         ul#da-thumbs.sf-da-isotope.da-thumbs
-          li.sf-da-item
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span BLOWBALL IN THE WIND
-          li.sf-da-item
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span CYCLE IN THE CLOUD
-          li.sf-da-item.people
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span BLACK AND WHITE
-          li.sf-da-item
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span ANGRY LION
-          li.sf-da-item
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span HIGHWAY TRAFFIC
-          li.sf-da-item.people
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span YOUNG BEAUTY
-          li.sf-da-item
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span ENJOYING FREEDOM
-          li.sf-da-item
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span FLUTTERING HAIR
-          li.sf-da-item
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span HAPPY FAMILY
-          li.sf-da-item.nature
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span BLOWBALL IN THE WIND
-          li.sf-da-item.nature
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span STAR ON FLAG
-          li.sf-da-item
-            a href="portfolio_details.html"
-              img src="http://dummyimage.com/655x437/888/bdbdbd.png&text=+"
-              div
-                span VACATION SUNSET
+          - data.portfolio.list.each do |portfolio|
+            li.sf-da-item class="#{portfolio.tags.join(' ')}"
+              = link_to "portfolio/#{portfolio.filename}.html", class: "brand myBrand" do
+                = image_tag portfolio.image
+                div
+                  span = portfolio.title
+/TODO helper test code - to be deleted after refactor
+/div
+/  = portfolio_tags.each do |f|
+/    p =f

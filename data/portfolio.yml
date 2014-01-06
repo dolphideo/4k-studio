@@ -1,0 +1,33 @@
+list:
+  - title: 'BLOWBALL IN THE WIND'
+    filename: 'portfolio_details1'
+    image: tmp_258x172.gif
+    tags:
+      - people
+      - woman
+  - title: 'CYCLE IN THE CLOUD'
+    filename: 'portfolio_details2'
+    image: tmp_258x172.gif
+    tags:
+      - nature
+  - title: 'BLACK AND WHITE'
+    filename: 'portfolio_details3'
+    image: tmp_258x172.gif
+    tags:
+     - rest
+  - title: 'HIGHWAY TRAFFIC'
+    filename: 'portfolio_details4'
+    image: tmp_258x172.gif
+    tags:
+      - cars
+  - title: 'YOUNG BEAUTY'
+    filename: 'portfolio_details1'
+    image: tmp_258x172.gif
+    tags:
+      - woman
+  - title: 'ENJOYING FREEDOM'
+    filename: 'portfolio_details2'
+    image: tmp_258x172.gif
+    tags:
+      - people
+      - cars
