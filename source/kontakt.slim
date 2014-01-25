@@ -1,1 +1,61 @@
-h1 Kontakt
+---
+title: Kontakt
+---
+.container.min-height
+  .row-fluid
+    .span12
+      h1 Kontakt
+      form#kontakt action="http://getsimpleform.com/messages?form_api_token=79068b092f5ff796f99d722fd34ea661" method="post"
+        /! the redirect_to is optional, the form will redirect to the referrer on submission
+        input name="redirect_to" type="hidden" value="http://localhost:4567/portfolio/"
+        /! all your input fields here....
+        label for="name" Imię i nazwisko
+        input.required name="name" type="text"
+
+        label for="organizacja" Organizacja
+        input name="organizacja" type="text"
+
+        label for="telefon" Telefon
+        input name="telefon" type="text"
+
+        label for="email" Email
+        input name="email" type="text"
+
+        label for="typFilmu" Typ filmu
+        select name="typFilmu"
+          option selected="selected" value=""
+          option value="Instruktażowy dynamiczny" Instruktażowy dynamiczny
+          option value="Instruktażowy szczegółowy" Instruktażowy szczegółowy
+          option value="Oprawa graficzna" Oprawa graficzna
+
+        label for="dlugosc" Planowana długość materiału
+        input name="dlugosc" type="text"
+
+        label for="miasto" Miejsce zdjęć (miasto)
+        input name="miasto" type="text"
+
+        label for="zdjeciaRozpoczecie" Planowana data zakończenia zdjęć
+        input.datepicker name="zdjeciaRozpoczecie" type="text"
+
+        label for="zdjeciaZakonczenie" Planowana data zakończenia zdjęć
+        input.datepicker name="zdjeciaZakonczenie" type="text"
+
+        label for="deadline" Termin zakończenia projektu
+        input.datepicker name="deadline" type="text"
+
+        label for="budzet" Przewidywany budżet
+        select name="budzet"
+          option selected="selected" value=""
+          option value="2500+" 2500+ zł
+          option value="5000+" 5000+ zł
+          option value="7500+" 7500+ zł
+          option value="10000+" 10000+ zł
+
+        label for="zrodlo" Skąd o nas wiesz?
+        select name="zrodlo"
+          option selected="selected" value=""
+          option value="social media" Social Media
+          option value="wyszukiwarka" Wyszukiwarka
+          option value="polecenie" Polecenie od znajomych
+
+        input type="submit" value="Wyślij!"

@@ -3,7 +3,7 @@ list:
     filename: 'portfolio_details1'
     image: tmp_258x172.gif
     tags:
-      - people
+      - film-instruktażowy-dynamiczny
       - woman
   - title: 'CYCLE IN THE CLOUD'
     filename: 'portfolio_details2'
@@ -19,7 +19,7 @@ list:
     filename: 'portfolio_details4'
     image: tmp_258x172.gif
     tags:
-      - cars
+      - film-instruktażowy-dynamiczny
   - title: 'YOUNG BEAUTY'
     filename: 'portfolio_details1'
     image: tmp_258x172.gif
