@@ -6,11 +6,14 @@ title: Kontakt
     .span12
       h1 Kontakt
       form#kontakt action="http://getsimpleform.com/messages?form_api_token=79068b092f5ff796f99d722fd34ea661" method="post"
-        /! the redirect_to is optional, the form will redirect to the referrer on submission
-        input name="redirect_to" type="hidden" value="http://localhost:4567/portfolio/"
-        /! all your input fields here....
-        label for="name" Imię i nazwisko
-        input.required name="name" type="text"
+        div.error
+          span
+        input name="redirect_to" type="hidden" value="http://localhost:4567/dziekujemy/"
+
+        label for="name"
+          | Imię i nazwisko
+          span *
+        input name="name" type="text"
 
         label for="organizacja" Organizacja
         input name="organizacja" type="text"
@@ -18,7 +21,9 @@ title: Kontakt
         label for="telefon" Telefon
         input name="telefon" type="text"
 
-        label for="email" Email
+        label for="email"
+          | Email
+          span *
         input name="email" type="text"
 
         label for="typFilmu" Typ filmu

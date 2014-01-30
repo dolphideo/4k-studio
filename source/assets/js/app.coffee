@@ -18,9 +18,4 @@
 #= require vendor/jquery.bxslider.min
 #= require vendor/jquery.hoverdir
 #= require vendor/standard
-
-(($) ->
-  $(window).on('load', () ->
-
-  )
-)(jQuery)
+#= require common
