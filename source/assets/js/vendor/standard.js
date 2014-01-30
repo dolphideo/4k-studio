@@ -43,11 +43,11 @@ $(document).ready(function() {
 			pagination : false,
 			fx : 'scrollHorz',
 			transPeriod : 800,
-			height : '70%',
+			height : '56.25%',
 			loader : 'none',
 			opacityOnGrid : false,
+      imagePath: '../../assets/images/',
 			onLoaded : function() {
-
 			}
 		});
 	}

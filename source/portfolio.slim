@@ -10,7 +10,7 @@ title: Portfolio
           a data-filter="*" href="#" ALL
         - portfolio_tags.each do |f|
           li
-            a data-filter=".#{f}" href="#" = f
+            a data-filter=".#{f}" href="#" = f.gsub('-', ' ')
       hr
         ul#da-thumbs.sf-da-isotope.da-thumbs
           - data.portfolio.list.each do |portfolio|
