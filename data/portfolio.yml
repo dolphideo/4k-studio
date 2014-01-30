@@ -16,6 +16,7 @@ list:
     image: tmp_258x172.gif
     tags:
      - oprawa-graficzna
+     - inne
   - title: 'HIGHWAY TRAFFIC'
     filename: 'portfolio_details4'
     image: tmp_258x172.gif
