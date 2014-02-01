@@ -12,6 +12,7 @@
 #= require vendor/jquery.isotope.min
 #= require vendor/jquery.animate-shadow-min
 #= require vendor/bootstrap-datepicker
+#= require vendor/locales/bootstrap-datepicker.pl.js
 #= require vendor/jquery.validate.min
 #= require vendor/additional-methods.min
 #= require vendor/jquery.colorbox-min

@@ -27,7 +27,11 @@ class Common
 
 
   datepicker: ->
-    $('.datepicker').datepicker()
+    $('.datepicker').datepicker(
+      format: 'DD, dd MM yyyy'
+      weekStart: 1
+      language: 'pl'
+    )
 
   validate: ->
     $(@element.$contactForm).validate
