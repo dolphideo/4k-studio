@@ -1,0 +1,23 @@
+- wrap_layout :layout do
+  .container.min-height
+    .row-fluid
+      .span8
+        = yield
+      .span3.offset1.blog-sidebar
+        = partial 'category'
+        = partial 'tags'
+
+  - if paginate && num_pages > 1
+    p
+      | Page
+      = page_number + ' of ' + num_pages
+
+    - if prev_page
+      p
+        = link_to 'Previous page', prev_page
+
+
+
+  - if paginate
+    - if next_page
+      p = link_to 'Next page', next_page

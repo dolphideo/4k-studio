@@ -4,6 +4,13 @@ set :markdown_engine, :redcarpet
 #Livereload
 activate :livereload
 
+activate :blog do |blog|
+  blog.prefix = 'blog'
+  blog.paginate = true
+  blog.page_link = "strona-{num}"
+  blog.per_page = 5
+end
+
 # links style
 activate :directory_indexes
 
@@ -19,6 +26,8 @@ activate :directory_indexes
 ###
 # Page options, layouts, aliases and proxies
 ###
+
+page "blog/*", :layout => :blog_layout
 
 # Per-page layout changes:
 #
@@ -85,7 +94,7 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-# ftp deployment configuration. 
+# ftp deployment configuration.
 # activate :deploy do |deploy|
 #   deploy.method = :ftp
 #   deploy.host = "ftp-host"

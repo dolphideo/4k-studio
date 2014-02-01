@@ -11,3 +11,5 @@ gem "middleman-pry"
 
 gem "slim"
 gem "redcarpet"
+gem 'middleman-blog'
+gem 'nokogiri'
