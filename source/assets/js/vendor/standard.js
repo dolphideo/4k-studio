@@ -149,9 +149,6 @@ $(document).ready(function() {
 		}
 	});
 	
-	// bootstrap extension datepicker:
-	$('.datepicker').datepicker();
-	
 	// bootstrap tabs:
 	$('#sf-tab a').click(function(e) {
 		e.preventDefault();

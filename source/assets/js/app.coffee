@@ -18,4 +18,5 @@
 #= require vendor/jquery.bxslider.min
 #= require vendor/jquery.hoverdir
 #= require vendor/standard
+#= require maps
 #= require common
