@@ -4,8 +4,8 @@
       .span8
         = yield
       .span3.offset1.blog-sidebar
-        = partial 'category'
-        = partial 'tags'
+        = partial '/layouts/category'
+        = partial '/layouts/tags'
 
   - if paginate && num_pages > 1
     p
