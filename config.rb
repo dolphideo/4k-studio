@@ -9,6 +9,9 @@ activate :blog do |blog|
   blog.paginate = true
   blog.page_link = "strona-{num}"
   blog.per_page = 5
+  blog.taglink = "kategorie/{tag}"
+  blog.tag_template = "blog/tag.html"
+  #blog.calendar_template = "calendar.html"
 end
 
 # links style
