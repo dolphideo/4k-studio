@@ -11,7 +11,7 @@ activate :blog do |blog|
   blog.per_page = 5
   blog.taglink = "{tag}.html"
   blog.tag_template = "blog/tag.html"
-  #blog.calendar_template = "calendar.html"
+  blog.calendar_template = "kalendarz.html"
 end
 
 # links style
