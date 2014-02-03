@@ -4,8 +4,9 @@
       .span8
         = yield
       .span3.offset1.blog-sidebar
-        = partial '/layouts/category'
+        = partial '/layouts/other'
         = partial '/layouts/tags'
+        = partial '/layouts/archive'
 
   - if paginate && num_pages > 1
     p
@@ -15,8 +16,6 @@
     - if prev_page
       p
         = link_to 'Previous page', prev_page
-
-
 
   - if paginate
     - if next_page

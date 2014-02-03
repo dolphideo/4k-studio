@@ -11,12 +11,12 @@ activate :blog do |blog|
   blog.per_page = 5
   blog.taglink = "{tag}.html"
   blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "kalendarz.html"
+  blog.calendar_template = "blog/calendar.html"
 end
 
 # links style
 activate :directory_indexes
-
+Time.zone = "Warsaw"
 ###
 # Compass
 ###

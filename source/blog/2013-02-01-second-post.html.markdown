@@ -2,6 +2,7 @@
 title: second post
 date: 2013-02-01 19:07 UTC
 tags: blogging, middleman
+featured: true
 ---
 
 That would be weven better than expected!

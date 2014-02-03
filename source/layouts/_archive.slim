@@ -1,0 +1,7 @@
+h4 Archiwum
+ul.category
+  - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+    - articles.group_by {|a| a.date.month }.each do |month, articles|
+      - articles.each do |article|
+        = link_to article.date.strftime('%Y %m'), blog_month_path(article.date.year, article.date.month)
+        br
