@@ -1,0 +1,93 @@
+---
+title: second post
+date: 2013-02-01 19:07 UTC
+tags: blogging, middleman
+featured: true
+---
+
+.blog-post
+  .image
+    img src="http://dummyimage.com/755x268/888/bdbdbd.png"
+  h4 = current_article.title
+  p
+    | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+  p
+    | Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+  p
+    br
+      blockquote
+        em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
+        small
+          b Peter Salt
+          cite title="Source Title"
+      br
+  p
+    | Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+  p
+    | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+  .bottom
+    a href="#"
+      span.label.label-info Snipp
+    a href="#"
+      span.label.label-info Bootstrap
+    a href="#"
+      span.label.label-info UI
+    a href="#"
+      span.label.label-info growth
+    .pull-right
+      i.icon-calendar
+      = current_article.date
+
+.row-fluid
+  h4 About the Author
+  hr
+    .row
+      .span2
+        img.margin20 src="http://dummyimage.com/655x437/888/bdbdbd.png"
+      .span10
+        h3 Petra Snow
+        p
+          | Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+.row-fluid
+  h4 Comments
+  hr
+    .media
+      a.pull-left href="#"
+        img.media-object height="64px" src="http://dummyimage.com/64x64/888/bdbdbd.png" width="64px"
+        h4.media-heading Media heading
+        p
+          | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+        /! Nested media object
+        .media
+          a.pull-left href="#"
+            img.media-object height="64px" src="http://dummyimage.com/64x64/888/bdbdbd.png" width="64px"
+            h4.media-heading Nested media heading
+            | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            /! Nested media object
+            .media
+              a.pull-left href="#"
+                img.media-object height="64px" src="http://dummyimage.com/64x64/888/bdbdbd.png" width="64px"
+                h4.media-heading Nested media heading
+                | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+        /! Nested media object
+        .media
+          a.pull-left href="#"
+            img.media-object height="64px" src="http://dummyimage.com/64x64/888/bdbdbd.png" width="64px"
+            h4.media-heading Nested media heading
+            | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+.row-fluid
+  h4 Leave a comment
+  hr
+    form#sf-form action="" method="POST"
+      .row.no-margin
+        .span4
+          input#name.span12.required.sf-tooltip data-placement="top" data-title="Name" name="name" placeholder="Name" rel="tooltip" type="text"
+        .span4
+          input#website.span12.required.sf-tooltip data-placement="top" data-title="Website" name="website" placeholder="Website" rel="tooltip" type="text"
+        .span4
+          input#email.span12.required.email.sf-tooltip data-placement="top" data-title="email" name="email" placeholder="email" rel="tooltip" type="text"
+      .row.no-margin
+        .span12
+          textarea#comment.span12.required.sf-tooltip data-placement="top" data-title="Comment..." name="comment" placeholder="Comment..." rel="tooltip" rows="5"
+      button.btn
+        | Post
