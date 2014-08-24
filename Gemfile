@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
-gem "middleman", "~>3.2"
-
-gem "json", '~> 1.7.7'
+gem "middleman"
+gem "json"
 
 gem "middleman-favicon-maker"
 gem "middleman-livereload"
