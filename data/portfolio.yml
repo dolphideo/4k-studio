@@ -5,31 +5,31 @@ list:
     filename: 'portfolio_details1'
     image: tmp_258x172.gif
     tags:
-      - film-instruktażowy-dynamiczny
+      - film-instruktażowy-długi
   - title: 'CYCLE IN THE CLOUD'
     filename: 'portfolio_details2'
     image: tmp_258x172.gif
     tags:
-      - film-instruktażowy-szczegółowy
+      - film-instruktażowy-krótki
   - title: 'BLACK AND WHITE'
     filename: 'portfolio_details3'
     image: tmp_258x172.gif
     tags:
-     - oprawa-graficzna
+     - grafika
      - inne
   - title: 'HIGHWAY TRAFFIC'
     filename: 'portfolio_details4'
     image: tmp_258x172.gif
     tags:
-      - film-instruktażowy-dynamiczny
+      - film-instruktażowy-długi
   - title: 'YOUNG BEAUTY'
     filename: 'portfolio_details1'
     image: tmp_258x172.gif
     tags:
-      - oprawa-graficzna
+      - grafika
   - title: 'ENJOYING FREEDOM'
     filename: 'portfolio_details2'
     image: tmp_258x172.gif
     tags:
-      - film-instruktażowy-szczegółowy
-      - oprawa-graficzna
+      - film-instruktażowy-krótki
+      - grafika

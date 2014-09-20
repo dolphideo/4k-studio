@@ -2,111 +2,190 @@
 title: Pokaż jak to robisz
 ---
 
-/! camera slider
-.container.offset-top-xl
-  #camera_wrap_1.camera_wrap.camera_white_skin
-    div data-src="assets/images/slides/bridge.jpg" data-thumb="assets/images/slides/thumbs/bridge.jpg"
-      .camera_caption.fadeFromBottom
-        | Camera is a responsive/adaptive slideshow.
-        em Try to resize the browser window
-    div data-src="assets/images/slides/leaf.jpg" data-thumb="assets/images/slides/thumbs/leaf.jpg"
-      .camera_caption.fadeFromBottom
-        | It uses a light version of jQuery mobile,
-        em navigate the slides by swiping with your fingers
-    div data-src="assets/images/slides/road.jpg" data-thumb="assets/images/slides/thumbs/road.jpg"
-      .camera_caption.fadeFromBottom
-        em It's completely free
-        | (even if a donation is appreciated)
-    div data-src="assets/images/slides/sea.jpg" data-thumb="assets/images/slides/thumbs/sea.jpg"
-      .camera_caption.fadeFromBottom
-        | Camera slideshow provides many options
-        em to customize your project
-        | as more as possible
-    div data-src="assets/images/slides/shelter.jpg" data-thumb="assets/images/slides/thumbs/shelter.jpg"
-      .camera_caption.fadeFromBottom
-        | It supports captions, HTML elements and videos and
-        em it's validated in HTML5
-        | (
-        a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.pixedelic.com%2Fplugins%2Fcamera%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.2" target="_blank"
-        | )
-    div data-src="assets/images/slides/tree.jpg" data-thumb="assets/images/slides/thumbs/tree.jpg"
-      .camera_caption.fadeFromBottom
-        | Different color skins and layouts available,
-        em fullscreen ready too
-/! end camera slider
+/ /! camera slider
+/ .container.offset-top-xl
+/   #camera_wrap_1.camera_wrap.camera_white_skin
+/     div data-src="assets/images/slides/bridge.jpg" data-thumb="assets/images/slides/thumbs/bridge.jpg"
+/       .camera_caption.fadeFromBottom
+/         | Camera is a responsive/adaptive slideshow.
+/         em Try to resize the browser window
+/     div data-src="assets/images/slides/leaf.jpg" data-thumb="assets/images/slides/thumbs/leaf.jpg"
+/       .camera_caption.fadeFromBottom
+/         | It uses a light version of jQuery mobile,
+/         em navigate the slides by swiping with your fingers
+/     div data-src="assets/images/slides/road.jpg" data-thumb="assets/images/slides/thumbs/road.jpg"
+/       .camera_caption.fadeFromBottom
+/         em It's completely free
+/         | (even if a donation is appreciated)
+/     div data-src="assets/images/slides/sea.jpg" data-thumb="assets/images/slides/thumbs/sea.jpg"
+/       .camera_caption.fadeFromBottom
+/         | Camera slideshow provides many options
+/         em to customize your project
+/         | as more as possible
+/     div data-src="assets/images/slides/shelter.jpg" data-thumb="assets/images/slides/thumbs/shelter.jpg"
+/       .camera_caption.fadeFromBottom
+/         | It supports captions, HTML elements and videos and
+/         em it's validated in HTML5
+/         | (
+/         a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.pixedelic.com%2Fplugins%2Fcamera%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.2" target="_blank"
+/         | )
+/     div data-src="assets/images/slides/tree.jpg" data-thumb="assets/images/slides/thumbs/tree.jpg"
+/       .camera_caption.fadeFromBottom
+/         | Different color skins and layouts available,
+/         em fullscreen ready too
+/ /! end camera slider
 /! content area
-.container
+section.container#flow
   /! welcome text
   .row-fluid align="center"
     hr
-      h4 Responsive Blog and Portfolio Design
+      h4 Chcesz zrobić wciągający, przejrzysty i zapadający w pamięć film instruktarzowy?
+      h3 Dobrze trafiłeś!
       p
-        | Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. Maecenas tincidunt ornare tellus, a mollis dui venenatis quis.
-      hr
+        | Super, i do dalej?
   /! end welcome text
   /! row for images
   .row-fluid.offset-both
-    .span3
+    .span4
       .offset-bottom
         = image_tag 'slides/big_bunny_fake.jpg'
+      h4 Brief
       p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
-    .span3
+        | Przesyłasz nam podstawowe założenia Twojego filmu.
+    .span4
       .offset-bottom
         = image_tag 'slides/big_bunny_fake.jpg'
+      h4 Spotkanie robocze
       p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
-    .span3
+        | Szczegółowo omawiamy projekt.
+    .span4
       .offset-bottom
         = image_tag 'slides/big_bunny_fake.jpg'
+      h4 Scenariusz
       p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
-    .span3
-      .offset-bottom
-        = image_tag 'slides/big_bunny_fake.jpg'
-      p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
-
+        | Przedstawiamy naszą ofertę i plan działania.
   .row-fluid.offset-both
-    /! column one infobox
+    .span12
+      .offset-bottom.middle
+        = image_tag 'arrow-7-days.png'
+  .row-fluid.offset-both
+    .span12
+      .offset-bottom
+        = image_tag 'slides/big_bunny_fake.jpg'
+      h4 Kręcimy!
+  .row-fluid.offset-both
     .span6
-      h4 Headline
-      hr
-        div
-          .span6
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              | Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitu.
-            p
-              | Metus vitae urna sollicitudin eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lor pera adomrar dolor libadon se cule padore a folodurento.
-          .span6
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              | Pellentesque eu posuere leo.
-              | Pellentesque a Design erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
-              | Maecenas vel metus vitae urna sollicitudin eleifend.
-            a href="#"
-    /! end column one infobox
-    /! column two quotes
+      .offset-bottom
+        = image_tag 'slides/big_bunny_fake.jpg'
+      h4 Montaż.
+      p
+        | Cięcia i edycja materiału.
     .span6
-      h4 Client Testimonials
-      hr
-        blockquote
-          em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
-          small
-            b Peter Salt
-            cite title="Source Title"
-        blockquote
-          em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
-          small
-            b Peter Salt
-            cite title="Source Title"
-        blockquote
-          em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
-          small
-            b Peter Salt
-            cite title="Source Title"
-    /! end column two quotes
+      .offset-bottom
+        = image_tag 'slides/big_bunny_fake.jpg'
+      h4 Efekty
+      p
+        | Dodajemy grafiki, animacje, muzykę...
+  .row-fluid.offset-both
+    .span12
+      .offset-bottom.middle
+        = image_tag 'arrow-7-days.png'    
+    .span12
+      .offset-bottom
+        = image_tag 'slides/big_bunny_fake.jpg'
+      h4 Gotowe!
+      p
+        | Twój film przygotowany do wyświetleń.
+  hr
+
+section#ekipa
+  h1 Kim jesteśmy
+  p
+    | Kilka lat temu rozwijaliśmy jedną z pierwszych w Polsce studencką telewizję internetową. Później w naturalny sposób pracowaliśmy kilka lat dla większych i mniejszych mediów: TVP, Canal+, Cyfrowy Polsat, SDI Media.
+  p
+    | Teraz tworzymy własną markę. Specjalizujemy się w filmach instruktażowych.
+  section.people.row-fluid
+    article.span4
+      .foto
+      .info
+        h2 Karol Flont
+        p Szef ekipy. Ma zlasowane w głowie od TVP.
+    article.span4
+      .foto
+      .info
+        h2 Andrzej Michalecki
+        p Dobry operator. Wiecznie śpi.
+    article.span4
+      .foto
+      .info
+        h2 Zbigniew Pomianowski
+        p Zapierdala w 3D Maxie jak nikt. Marnuje się w Cyfrowym Polsacie.
+
+  section#portfolio.container.min-height
+    .row-fluid
+      .span12
+        ul#da-filters.sf-da-isotope-filters
+          li.active
+            a data-filter="*" href="#" WSZYSTKIE
+          - portfolio_tags.each do |f|
+            li
+              a data-filter=".#{f}" href="#" = f.gsub('-', ' ')
+        hr
+          ul#da-thumbs.sf-da-isotope.da-thumbs
+            - data.portfolio.list.each do |portfolio|
+              li.sf-da-item class="#{portfolio.tags.join(' ')}"
+                = link_to "portfolio/#{portfolio.filename}.html", class: "brand myBrand" do
+                  = image_tag portfolio.image
+                  div
+                    span = portfolio.title
+
+  hr
+  h4 Przekonaliście mnie.
+  h1 Chcę z wami zrobić film.
+  p
+    | Śmiało! Wyślij nam swoje podstawowe założenia, lub po prostu zostaw do siebie kontakt.
+    
+
+  / .row-fluid.offset-both
+  /   /! column one infobox
+  /   .span6
+  /     h4 Headline
+  /     hr
+  /       div
+  /         .span6
+  /           p
+  /             | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  /             | Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitu.
+  /           p
+  /             | Metus vitae urna sollicitudin eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lor pera adomrar dolor libadon se cule padore a folodurento.
+  /         .span6
+  /           p
+  /             | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  /             | Pellentesque eu posuere leo.
+  /             | Pellentesque a Design erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.
+  /             | Maecenas vel metus vitae urna sollicitudin eleifend.
+  /           a href="#"
+  /   /! end column one infobox
+  /   /! column two quotes
+  /   .span6
+  /     h4 Client Testimonials
+  /     hr
+  /       blockquote
+  /         em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
+  /         small
+  /           b Peter Salt
+  /           cite title="Source Title"
+  /       blockquote
+  /         em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
+  /         small
+  /           b Peter Salt
+  /           cite title="Source Title"
+  /       blockquote
+  /         em This it the best Design I have ever seen! It's based on Bootstrap so customizing was very easy and fast.
+  /         small
+  /           b Peter Salt
+  /           cite title="Source Title"
+  /   /! end column two quotes
 /! end content area
 
 /script src="js/jquery-1.8.0.min.js"
