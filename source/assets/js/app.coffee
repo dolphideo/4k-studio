@@ -1,23 +1,3 @@
-# jquery and jquery.ui loaded from CDN
-#= require vendor/tmp/jquery-1.8.3.min
-#= require vendor/tmp/jquery-ui.min
-# temporary downloaded
-#= require vendor/bootstrap.min
-#= require vendor/selectnav.min
-#= require vendor/jquery-easing
-#= require vendor/jquery.lavalamp.min
-#= require vendor/jquery.mobile.customized.min
-#= require vendor/camera.min
-#= require vendor/hoverIntent
-#= require vendor/jquery.isotope.min
-#= require vendor/jquery.animate-shadow-min
-#= require vendor/bootstrap-datepicker
-#= require vendor/locales/bootstrap-datepicker.pl.js
-#= require vendor/jquery.validate.min
-#= require vendor/additional-methods.min
-#= require vendor/jquery.colorbox-min
-#= require vendor/jquery.bxslider.min
-#= require vendor/jquery.hoverdir
-#= require vendor/standard
-#= require maps
-#= require common
+# jquery and jquery.ui should be loaded from CDN
+#= require vendor/jquery-1.11.1.min
+#= require bootstrap

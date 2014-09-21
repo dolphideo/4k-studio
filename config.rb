@@ -4,16 +4,6 @@ set :markdown_engine, :redcarpet
 #Livereload
 activate :livereload
 
-activate :blog do |blog|
-  blog.prefix = 'blog'
-  blog.paginate = true
-  blog.page_link = "strona-{num}"
-  blog.per_page = 5
-  blog.taglink = "{tag}.html"
-  blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "blog/calendar.html"
-end
-
 # links style
 activate :directory_indexes
 Time.zone = "Warsaw"
@@ -58,6 +48,7 @@ page "blog/*", :layout => :blog_layout
 set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 
 # Add bower's directory to sprockets asset path
 after_configuration do

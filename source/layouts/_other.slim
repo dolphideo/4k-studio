@@ -1,7 +1,0 @@
-- featured = blog.articles.select{|item| item.metadata[:page]["featured"] rescue false}
-- featured.delete_if{|item| item == current_article}
-- if featured.present?
-  h4 Popularne
-  ul.category
-    - featured.each do |article|
-      li = link_to article.title, article.url
