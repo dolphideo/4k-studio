@@ -1,0 +1,113 @@
+@charset 'utf-8'
+
+@import 'settings'
+@import 'imports'
+@import 'vendor_fixes'
+
+body
+  background: $backgroundColor
+  color: $textColor
+
+.background
+  color: $white
+
+.blue
+  color: $blue
+
+section
+  @extend .container-fluid
+  min-height: 720px
+  h1
+    text-transform: uppercase
+    font-size: 2em
+    width: 1030px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 30px
+    text-align: center
+    padding-bottom: 7px
+
+#heading
+  @extend .background
+  background-image: image-url('background-01.jpg')
+  .logo
+    padding-top: 190px
+    min-width: 510px
+    margin-left: auto
+    margin-right: auto
+    font-size: 4em
+    text-align: center
+    p
+      display: inline-block
+    span.play
+      display: inline-block
+      width: 50px
+      height: 50px
+      background-image: image-url('logo.png')
+      background-size: 50px 50px
+
+#tagline
+  width: 70%
+  display: block
+  margin-left: auto
+  margin-right: auto
+  font-size: 2em
+  background-color: rgba(102, 102, 102, 0.6)
+  min-height: 100px
+  text-align: center
+  padding: 0
+  padding-top: 30px
+  li
+    display: inline-block
+    text-transform: uppercase
+    &:before, &:last-of-type:after
+      content: ""
+      display: inline-block
+      width: 12px
+      height: 12px
+      background-color: $white
+      @include border-radius(6px)
+      margin: auto 10px 4px 10px
+
+#flow
+  h1
+    border-bottom: 1px solid $black
+  li
+    display: inline-block
+  .step1
+    background-image
+
+#clients
+  @extend .background
+  background-image: image-url('background-02.jpg')
+  li
+    @extend .col-sm-3
+  h1
+    border-bottom: 1px solid $white
+
+#portfolio
+  li
+    @extend .col-sm-4
+  h1
+    border-bottom: 1px solid $black
+
+
+#contact
+  @extend .background
+  background-image: image-url('background-04.jpg')
+
+#flow, #portfolio, #clients
+  ul
+    @extend .row
+  li
+    display: block
+
+#footer
+  background-color: $black
+  color: $white
+  padding-left: 10%
+  padding-right: 10%
+  min-height: 130px
+
+  .left
+    text-align: right

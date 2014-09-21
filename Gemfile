@@ -12,3 +12,5 @@ gem "slim"
 gem "redcarpet"
 gem 'middleman-blog'
 gem 'nokogiri'
+
+gem "bootstrap-sass", require: false
