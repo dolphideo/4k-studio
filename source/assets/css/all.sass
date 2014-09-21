@@ -27,6 +27,13 @@ section
     text-align: center
     padding-bottom: 7px
 
+#flow, #portfolio, #clients
+  ul
+    @extend .row
+    padding: 20px
+  li
+    display: block
+
 #heading
   @extend .background
   background-image: image-url('background-01.jpg')
@@ -69,14 +76,6 @@ section
       @include border-radius(6px)
       margin: auto 10px 4px 10px
 
-#clients
-  @extend .background
-  background-image: image-url('background-02.jpg')
-  li
-    @extend .col-sm-3
-  h1
-    border-bottom: 1px solid $white
-
 #portfolio
   li
     @extend .col-sm-4
@@ -86,10 +85,3 @@ section
 #contact
   @extend .background
   background-image: image-url('background-04.jpg')
-
-#flow, #portfolio, #clients
-  ul
-    @extend .row
-    padding: 20px
-  li
-    display: block
