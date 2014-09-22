@@ -16,7 +16,6 @@ body
 
 section
   @extend .container-fluid
-  min-height: 720px
   h1
     text-transform: uppercase
     font-size: 2em
@@ -37,9 +36,9 @@ section
 #heading
   @extend .background
   background-image: image-url('background-01.jpg')
+  padding-bottom: 110px
   .logo
     padding-top: 190px
-    min-width: 510px
     margin-left: auto
     margin-right: auto
     font-size: 4em
@@ -60,10 +59,8 @@ section
   margin-right: auto
   font-size: 2em
   background-color: rgba(102, 102, 102, 0.6)
-  min-height: 100px
   text-align: center
-  padding: 0
-  padding-top: 30px
+  padding: 30px 10px 30px 10px
   li
     display: inline-block
     text-transform: uppercase
@@ -75,3 +72,5 @@ section
       background-color: $white
       @include border-radius(6px)
       margin: auto 10px 4px 10px
+    &:last-of-type:after
+      @extend .hidden-xs

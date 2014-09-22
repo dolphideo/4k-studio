@@ -7,26 +7,36 @@
     @extend .col-sm-2
     position: relative
     height: 200px
-  .step1
-    background: image-url('flow_brief.png') 50% 50% no-repeat
-    background-size: 60%
-  .step2
-    background: image-url('flow_meeting.png') 50% 50% no-repeat
-    background-size: 60%
+    div
+      height: 60%
+      margin-top: 15%
+
+  li:nth-of-type(1)
+    div
+      background: image-url('flow_brief.png') 50% 50% no-repeat
+      background-size: contain
+  li:nth-of-type(2)
+    div
+      background: image-url('flow_meeting.png') 50% 50% no-repeat
+      background-size: contain
     p
       bottom: 15px
-  .step3
-    background: image-url('flow_script.png') 50% 50% no-repeat
-    background-size: 60%
-  .step4
-    background: image-url('flow_camera.png') 50% 50% no-repeat
-    background-size: 60%
-  .step5
-    background: image-url('flow_editing.png') 50% 50% no-repeat
-    background-size: 60%
-  .step6
-    background: image-url('flow_twoj_film.png') 50% 50% no-repeat
-    background-size: 60%
+  li:nth-of-type(3)
+    div
+      background: image-url('flow_script.png') 50% 50% no-repeat
+      background-size: contain
+  li:nth-of-type(4)
+    div
+      background: image-url('flow_camera.png') 50% 50% no-repeat
+      background-size: contain
+  li:nth-of-type(5)
+    div
+      background: image-url('flow_editing.png') 50% 50% no-repeat
+      background-size: contain
+  li:nth-of-type(6)
+    div
+      background: image-url('flow_twoj_film.png') 50% 50% no-repeat
+      background-size: contain
 
   p
     position: absolute
@@ -35,6 +45,8 @@
     text-align: center
 
   .arrow
+    @extend .hidden-xs
+    @extend .hidden-sm
     position: relative
     width: 485px
     height: 20px
