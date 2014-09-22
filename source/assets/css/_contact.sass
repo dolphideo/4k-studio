@@ -1,0 +1,47 @@
+#contact
+  @extend .background
+  background: image-url('background-contact.jpg') 50% 50% no-repeat
+  background-size: cover
+  padding-bottom: 5%
+  h1
+    color: $black
+    border-bottom: 1px solid $black
+    width: 80%
+
+  ul
+    @extend .row
+    @extend .center-block
+    padding: 0
+    margin-top: 30px
+    width: 80%
+    padding-bottom: 40px
+    background-color: rgba(102, 102, 102, 0.6)
+    li:nth-of-type(1)
+      div
+        background: image-url('contact.png') 50% 50% no-repeat
+        background-size: contain
+    li:nth-of-type(2)
+      div
+        background: image-url('phone.png') 50% 50% no-repeat
+        background-size: contain
+      p
+        color: $blue
+    li:nth-of-type(3)
+      div
+        background: image-url('facebook.png') 50% 50% no-repeat
+        background-size: contain
+
+  li
+    @extend .col-sm-4
+    @extend .center-block
+    text-align: center
+    display: block
+    margin-top: 3em
+    div
+      @extend .center-block
+      height: 120px
+      width: 150px
+    p
+      margin-top: 1em
+
+
