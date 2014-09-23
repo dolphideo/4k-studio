@@ -39,8 +39,21 @@ section
 
 #heading
   @extend .background
-  background-image: image-url('background-01.jpg')
+  // background-image: image-url('background-01.jpg')
   padding-bottom: 110px
+  video#bgvid
+    position: fixed
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -100
+    background: image-url('background-01.jpg') no-repeat
+
+    // background-size: cover
+
   .logo
     padding-top: 190px
     margin-left: auto
