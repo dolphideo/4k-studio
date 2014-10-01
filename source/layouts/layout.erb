@@ -24,16 +24,14 @@
   </head>
 
   <body>
-    <div id="skrollr-body">
+
     <!--[if lt IE 8]>
       <%= partial "partials/compatibility-notice" %>
     <![endif]-->
-
     <%= yield %>
 
     <%= partial "partials/footer" %>
 
     <%= javascript_include_tag "app" %>
-    </div>
   </body>
 </html>
