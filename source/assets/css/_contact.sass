@@ -19,17 +19,15 @@
     color: $white
     border-bottom: 1px solid $white
     width: 80%
-    margin-bottom: 7%
+    margin-bottom: 5%
   ul
     @extend .row
     @extend .center-block
     font-family: 'Segoe Print'
-    padding: 0
-    margin-top: 30px
+    padding: 15px 0px 15px 0px
     width: 80%
-    padding-bottom: 40px
     background-color: rgba(0, 0, 0, 0.7)
-    margin-bottom: 30px
+    margin-bottom: 5%
     li:nth-of-type(1)
       div
         background: image-url('contact.png') 50% 50% no-repeat
@@ -40,6 +38,9 @@
         background-size: contain
       p
         color: $blue
+        margin: 0
+        &:first-of-type
+          margin-top: 10px
     li:nth-of-type(3)
       div
         background: image-url('facebook.png') 50% 50% no-repeat
@@ -50,12 +51,11 @@
     @extend .center-block
     text-align: center
     display: block
-    margin-top: 3em
     div
       @extend .center-block
       height: 120px
       width: 150px
     p
       margin-top: 1em
-
+      margin-bottom: 0px
 
