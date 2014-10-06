@@ -11,7 +11,7 @@ body
 
 h1, h2, h3, h4, h5, h6
   font-family: $font-family-base
-  font-weight: $extralight
+  font-weight: $light
   font-style: normal
 
 .background
@@ -67,7 +67,8 @@ section
   font-size: 2em
   background-color: rgba(0, 0, 0, 0.7)
   text-align: center
-  padding: 30px 10px 30px 10px
+  padding: 20px 10px
+  font-weight: $light
   li
     display: inline-block
     text-transform: uppercase
@@ -81,3 +82,6 @@ section
       margin: auto 10px 4px 10px
     &:last-of-type:after
       @extend .hidden-xs
+
+#cboxClose
+  display: none
