@@ -16,10 +16,25 @@
       height: 60%
       margin-top: 15%
 
+  li:nth-of-type(n) div:after
+    content: ">"
+    display: block
+    position: absolute
+    top: 70px
+    height: 10px
+    width: 10px
+    right: -6px
+    font-size: 30px
+    font-family: 'Oswald'
+    font-weight: $light
+  li:last-of-type div:after
+    display: none
+
   li:nth-of-type(1)
     div
       background: image-url('flow_brief.png') 50% 50% no-repeat
       background-size: contain
+
   li:nth-of-type(2)
     div
       background: image-url('flow_meeting.png') 50% 50% no-repeat
