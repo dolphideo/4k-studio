@@ -23,11 +23,11 @@ class Maps
     marker = new google.maps.Marker
       position: position
       map: map
-      title: 'Dolphideo'
+      title: '4K Studio'
       icon: pinIcon
       animation: google.maps.Animation.DROP
 
-    contentString = '<div id="mapContent"><h1 id="firstHeading">Dolphideo Karol Flont</h1><p>Może jakiś opis?</p></div>'
+    contentString = '<div id="mapContent"><h1 id="firstHeading">4K Studio Karol Flont</h1><p>Może jakiś opis?</p></div>'
 
     infowindow = new google.maps.InfoWindow
       content: contentString
