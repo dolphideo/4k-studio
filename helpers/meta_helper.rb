@@ -1,5 +1,5 @@
 def page_title
-  title = "Dolphideo" #Set site title here
+  title = "4K Studio" #Set site title here
 
   if data.page.title
     title << " | " + data.page.title
