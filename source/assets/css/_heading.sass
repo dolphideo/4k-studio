@@ -1,0 +1,48 @@
+#heading
+  @extend .background
+  padding-bottom: 100px
+  position: relative
+  video#bgvid
+    position: fixed
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -100
+    background: image-url('background-01.jpg') no-repeat
+
+  .logo
+    padding-top: 300px
+    margin: 50px auto
+    background: image-url('logo_full.png') 50% 50% no-repeat
+    background-size: contain
+
+#tagline
+  display: block
+  margin-left: auto
+  margin-right: auto
+  font-size: 2em
+  background-color: rgba(0, 0, 0, 0.7)
+  text-align: center
+  font-weight: $light
+  text-transform: uppercase
+  width: 70%
+  padding: 20px 10px
+  p
+    font-size: 1.6em
+  ul
+    padding: 0
+  li
+    display: inline-block
+    &:before, &:last-of-type:after
+      content: ""
+      display: inline-block
+      width: 12px
+      height: 12px
+      background-color: $white
+      @include border-radius(6px)
+      margin: auto 10px 4px 10px
+    &:last-of-type:after
+      @extend .hidden-xs
