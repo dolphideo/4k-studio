@@ -19,12 +19,9 @@ class Common
       $spinnerDecrease: $(@options.spinnerDecrease)
 
     @unclickable()
-#    @fancySelect()
-#    @numberSpinner()
     @initTip tip for tip in @element.$tips
     @validate()
     @datepicker()
-
 
   datepicker: ->
     $('.datepicker').datepicker(
@@ -62,10 +59,6 @@ class Common
       event.preventDefault()
     return
 
-#  fancySelect: ->
-#    @element.$fancySelect.fancySelect() if @element.$fancySelect.length
-#    return
-
   initTip: (tip) ->
     $tip = $(tip)
     id = $tip.data 'tip'
@@ -88,27 +81,5 @@ class Common
         target[property] = extension[property]
     target
 
-#  numberSpinner: ->
-#    @element.$spinnerIncrease.click @onIncreaseClick
-#    @element.$spinnerDecrease.click @onDecreaseClick
-#
-#  onIncreaseClick: (event) ->
-#    event.preventDefault()
-#    box = $(event.target).parent().parent().find('input[type="number"]')
-#    value = box.val()
-#    if box.attr('data-top-limit')
-#      if value < parseInt(box.attr('data-top-limit'))
-#        value++
-#    else
-#      value++
-#    box.val value
-#
-#  onDecreaseClick: (event) ->
-#    event.preventDefault()
-#    box = $(event.target).parent().parent().find('input[type="number"]')
-#    value = box.val()
-#    if value > 1
-#      value--
-#    box.val value
 
 $(document).ready -> new Common
