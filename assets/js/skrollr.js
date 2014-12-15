@@ -1,0 +1,1 @@
+!function(e){if(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent||navigator.vendor||window.opera))e("#clients .bcg").css("background-attachment","scroll"),e("#contact .bcg").css("background-attachment","scroll");else{var n=skrollr.init({forceHeight:!1});n.refresh(e("#clients"))}}(jQuery);

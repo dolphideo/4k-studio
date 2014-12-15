@@ -1,0 +1,1 @@
+$("#portfolio .thumb").colorbox({iframe:!0,innerWidth:600,innerHeight:409});
