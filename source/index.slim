@@ -63,11 +63,26 @@ section#clients
 
 section#portfolio
   h1 Nasze filmy
+  .row-fluid
+    .span12
+      ul#da-filters.sf-da-isotope-filters
+        li.active
+          a data-filter="*" href="#" WSZYSTKIE
+        - portfolio_tags.each do |f|
+          li
+            a data-filter=".#{f}" href="#" = f.gsub('-', ' ')
+      hr
+        ul#da-thumbs.sf-da-isotope.da-thumbs
+          - data.portfolio.list.each do |portfolio|
+            li.sf-da-item class="#{portfolio.tags.join(' ')}"
+              = link_to "portfolio/#{portfolio.filename}.html", class: "brand myBrand" do
+                = image_tag portfolio.image
+                div
+                  span = portfolio.title
+
   ul
     li
-      .wrapper
-        .thumb href="http://player.vimeo.com/video/74980318"
-          p 3 X LOOK NA LATO
+
     li
       .wrapper
         .thumb href="http://player.vimeo.com/video/81767257"

@@ -1,0 +1,33 @@
+list:
+  - title: 'BLOWBALL IN THE WIND'
+    vimeo: 'portfolio_details1'
+    image: tmp_258x172.gif
+    tags:
+      - people
+      - woman
+  - title: 'CYCLE IN THE CLOUD'
+    vimeo: 'portfolio_details2'
+    image: tmp_258x172.gif
+    tags:
+      - nature
+  - title: 'BLACK AND WHITE'
+    vimeo: 'portfolio_details3'
+    image: tmp_258x172.gif
+    tags:
+     - rest
+  - title: 'HIGHWAY TRAFFIC'
+    vimeo: 'portfolio_details4'
+    image: tmp_258x172.gif
+    tags:
+      - cars
+  - title: 'YOUNG BEAUTY'
+    vimeo: 'portfolio_details1'
+    image: tmp_258x172.gif
+    tags:
+      - woman
+  - title: 'ENJOYING FREEDOM'
+    vimeo: 'portfolio_details2'
+    image: tmp_258x172.gif
+    tags:
+      - people
+      - cars

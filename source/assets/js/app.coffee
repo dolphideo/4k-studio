@@ -3,7 +3,9 @@
 #= require vendor/jquery.colorbox-min
 #= require vendor/skrollr.min
 #= require vendor/jquery.smooth-scroll
+#= require vendor/isotope.pkgd.js
 #= require bootstrap
 #= require colorbox
 #= require skrollr
 #= require smooth-scroll
+#= require isotope-conf
