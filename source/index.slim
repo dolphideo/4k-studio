@@ -75,35 +75,35 @@ section#portfolio
         ul#da-thumbs.sf-da-isotope.da-thumbs
           - data.portfolio.list.each do |portfolio|
             li.sf-da-item class="#{portfolio.tags.join(' ')}"
-              = link_to "portfolio/#{portfolio.filename}.html", class: "brand myBrand" do
-                = image_tag portfolio.image
-                div
-                  span = portfolio.title
+              .wrapper
+                /#= image_tag portfolio.image
+                div = link_to "http://player.vimeo.com/video/#{portfolio.vimeo}", class: "thumb" do
+                  p = portfolio.title
 
-  ul
-    li
+  / ul
+  /   li
 
-    li
-      .wrapper
-        .thumb href="http://player.vimeo.com/video/81767257"
-          p MAKIJAŻ LAURY GUIDI
-    li
-      .wrapper
-        .thumb href="http://player.vimeo.com/video/82521685"
-          p MAKIJAŻ DLA MATKI I CÓRKI
-  ul
-    li
-      .wrapper
-        .thumb href="http://player.vimeo.com/video/82969314"
-          p PODKŁAD CREME PUFF
-    li
-      .wrapper
-        .thumb href="http://player.vimeo.com/video/83397726"
-          p MAKIJAŻ W HOLLYWOODZKIM STYLU
-    li
-      .wrapper
-        .thumb href="http://player.vimeo.com/video/87377017"
-          p MAKIJAŻ NA WIOSNĘ/LATO 2014
+  /   li
+  /     .wrapper
+  /       .thumb href="http://player.vimeo.com/video/81767257"
+  /         p MAKIJAŻ LAURY GUIDI
+  /   li
+  /     .wrapper
+  /       .thumb href="http://player.vimeo.com/video/82521685"
+  /         p MAKIJAŻ DLA MATKI I CÓRKI
+  / ul
+  /   li
+  /     .wrapper
+  /       .thumb href="http://player.vimeo.com/video/82969314"
+  /         p PODKŁAD CREME PUFF
+  /   li
+  /     .wrapper
+  /       .thumb href="http://player.vimeo.com/video/83397726"
+  /         p MAKIJAŻ W HOLLYWOODZKIM STYLU
+  /   li
+  /     .wrapper
+  /       .thumb href="http://player.vimeo.com/video/87377017"
+  /         p MAKIJAŻ NA WIOSNĘ/LATO 2014
 
 section#contact
   .bcg data-anchor-target="#contact" data-bottom-top="background-position: 50% 200px;" data-top-bottom="background-position: 50% -200px;"

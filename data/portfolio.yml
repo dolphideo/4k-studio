@@ -1,33 +1,33 @@
 list:
-  - title: 'BLOWBALL IN THE WIND'
-    vimeo: 'portfolio_details1'
-    image: tmp_258x172.gif
+  - title: '3X LOOK NA LATO'
+    vimeo: '74980318'
+    image: 74980318.png
     tags:
       - people
       - woman
-  - title: 'CYCLE IN THE CLOUD'
-    vimeo: 'portfolio_details2'
-    image: tmp_258x172.gif
+  - title: 'MAKIJAŻ LAURY GUIDI'
+    vimeo: '81767257'
+    image: 81767257.png
     tags:
       - nature
-  - title: 'BLACK AND WHITE'
-    vimeo: 'portfolio_details3'
-    image: tmp_258x172.gif
+  - title: 'MAKIJAŻ DLA MATKI I CÓRKI'
+    vimeo: '82521685'
+    image: 82521685.png
     tags:
      - rest
-  - title: 'HIGHWAY TRAFFIC'
-    vimeo: 'portfolio_details4'
-    image: tmp_258x172.gif
+  - title: 'PODKŁAD CREME PUFF'
+    vimeo: '82969314'
+    image: 82969314.png
     tags:
       - cars
-  - title: 'YOUNG BEAUTY'
-    vimeo: 'portfolio_details1'
-    image: tmp_258x172.gif
+  - title: 'MAKIJAŻ W HOLLYWOODZKIM STYLU'
+    vimeo: '83397726'
+    image: 83397726.png
     tags:
       - woman
-  - title: 'ENJOYING FREEDOM'
-    vimeo: 'portfolio_details2'
-    image: tmp_258x172.gif
+  - title: 'MAKIJAŻ NA WIOSNĘ/LATO 2014'
+    vimeo: '87377017'
+    image: 87377017.png
     tags:
       - people
       - cars
