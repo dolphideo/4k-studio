@@ -20,8 +20,20 @@ class Common
 
     @unclickable()
     @initTip tip for tip in @element.$tips
-    @validate()
-    @datepicker()
+    # @validate()
+    # @datepicker()
+    @bxSlider()
+
+  bxSlider: ->
+    $('#tagline').bxSlider(
+      adaptiveHeight: true
+      # mode: 'fade'
+      # pager: false
+      controls: false
+      auto: true
+      autoHover: true
+      )
+
 
   datepicker: ->
     $('.datepicker').datepicker(

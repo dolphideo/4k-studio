@@ -9,9 +9,9 @@ $('#da-filters a').click ->
   $('.sf-da-isotope-filters li').removeClass 'active'
   $(this).closest('li').addClass 'active'
   false
-$(' #da-thumbs > li ').each ->
-  $(this).hoverdir()
-  return
+# $(' #da-thumbs > li ').each ->
+#   $(this).hoverdir()
+#   return
 #isotope filter options:
 $('.sf-isotope').isotope
   itemSelector: '#portfolio .wrapper'
@@ -22,9 +22,9 @@ $container.isotope
   resizable: false
   masonry: columnWidth: $container.width() / 5
 # isotope - update columnWidth on window resize
-$(window).smartresize ->
-  $container.isotope masonry: columnWidth: $container.width() / 5
-  return
+# $(window).smartresize ->
+#   $container.isotope masonry: columnWidth: $container.width() / 5
+#   return
 # isotope - filter items when filter link is clicked:
 $('#filters a').click ->
   selector = $(this).attr('data-filter')

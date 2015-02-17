@@ -21,6 +21,15 @@
     background: image-url('logo_full.png') 50% 50% no-repeat
     background-size: contain
 
+.bx-wrapper
+  width: 70%
+.bx-wrapper ul li
+  padding: 20px 0px
+.bx-wrapper .bx-viewport
+  border: none
+  box-shadow: none
+  background-color: rgba(0, 0, 0, 0.7)
+
 #tagline
   display: block
   margin-left: auto
@@ -30,21 +39,19 @@
   text-align: center
   font-weight: $light
   text-transform: uppercase
-  width: 70%
-  padding: 20px 10px
   p
     font-size: 1.6em
-  ul
+  ul.point
     padding: 0
-  li
-    display: inline-block
-    &:before, &:last-of-type:after
-      content: ""
+    li
       display: inline-block
-      width: 12px
-      height: 12px
-      background-color: $white
-      @include border-radius(6px)
-      margin: auto 10px 4px 10px
-    &:last-of-type:after
-      @extend .hidden-xs
+      &:before, &:last-of-type:after
+        content: ""
+        display: inline-block
+        width: 12px
+        height: 12px
+        background-color: $white
+        @include border-radius(6px)
+        margin: auto 10px 4px 10px
+      &:last-of-type:after
+        @extend .hidden-xs
