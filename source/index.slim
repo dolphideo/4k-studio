@@ -90,47 +90,18 @@ section#clients
 
 section#portfolio
   h1 Nasze filmy
-  .row-fluid
-    .span12
-      ul#da-filters.sf-da-isotope-filters
-        li.active
-          a data-filter="*" href="#" WSZYSTKIE
-        - portfolio_tags.each do |f|
-          li
-            a data-filter=".#{f}" href="#" = f.gsub('-', ' ')
-      hr
-        ul#da-thumbs.sf-da-isotope.da-thumbs
-          - data.portfolio.list.each do |portfolio|
-            li.sf-da-item class="#{portfolio.tags.join(' ')}"
-              .wrapper
-                /#= image_tag portfolio.image
-                div = link_to "http://player.vimeo.com/video/#{portfolio.vimeo}", class: "thumb" do
-                  p = portfolio.title
-
-  / ul
-  /   li
-
-  /   li
-  /     .wrapper
-  /       .thumb href="http://player.vimeo.com/video/81767257"
-  /         p MAKIJAŻ LAURY GUIDI
-  /   li
-  /     .wrapper
-  /       .thumb href="http://player.vimeo.com/video/82521685"
-  /         p MAKIJAŻ DLA MATKI I CÓRKI
-  / ul
-  /   li
-  /     .wrapper
-  /       .thumb href="http://player.vimeo.com/video/82969314"
-  /         p PODKŁAD CREME PUFF
-  /   li
-  /     .wrapper
-  /       .thumb href="http://player.vimeo.com/video/83397726"
-  /         p MAKIJAŻ W HOLLYWOODZKIM STYLU
-  /   li
-  /     .wrapper
-  /       .thumb href="http://player.vimeo.com/video/87377017"
-  /         p MAKIJAŻ NA WIOSNĘ/LATO 2014
+  div#accordion
+    - data.portfolio2.categories.each_with_index do |category, index|
+      h3 = category[1]
+      ul
+        - data.portfolio2.videos.each do |list|
+          - if list[0]==index
+            - list[1].each do |video|
+              li
+                .wrapper
+                  = link_to "http://player.vimeo.com/video/#{video.vimeo}", {class: "thumb"} do
+                    p = video.title
+                    = image_tag "thumbs/" + video.image
 
 section#contact
   .bcg data-anchor-target="#contact" data-bottom-top="background-position: 50% 200px;" data-top-bottom="background-position: 50% -200px;"

@@ -23,6 +23,7 @@ class Common
     # @validate()
     # @datepicker()
     @bxSlider()
+    @accordion()
 
   bxSlider: ->
     $('#tagline').bxSlider(
@@ -34,6 +35,12 @@ class Common
       autoHover: true
       )
 
+  accordion: ->
+    console.log('dupa')
+    $('#accordion').accordion(
+      header: "h3"
+      heightStyle: "content"
+      )
 
   datepicker: ->
     $('.datepicker').datepicker(
