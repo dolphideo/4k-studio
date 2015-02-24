@@ -91,10 +91,10 @@ section#clients
 section#portfolio
   h1 Nasze filmy
   div#accordion
-    - data.portfolio2.categories.each_with_index do |category, index|
+    - data.portfolio.categories.each_with_index do |category, index|
       h3 = category[1]
       ul
-        - data.portfolio2.videos.each do |list|
+        - data.portfolio.videos.each do |list|
           - if list[0]==index
             - list[1].each do |video|
               li
