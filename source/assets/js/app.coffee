@@ -5,6 +5,7 @@
 #= require vendor/jquery.easing.1.3
 #= require vendor/jquery.fitvids
 #= require vendor/jquery.bxslider.min
+#= require vendor/owl.carousel.beta.min
 #= require bootstrap
 #= require colorbox
 #= require skrollr

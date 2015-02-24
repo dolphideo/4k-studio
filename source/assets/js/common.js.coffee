@@ -22,10 +22,11 @@ class Common
     @initTip tip for tip in @element.$tips
     # @validate()
     # @datepicker()
-    @bxSlider()
+    @bxSliderHeader()
+    @bxSliderClients()
     @accordion()
 
-  bxSlider: ->
+  bxSliderHeader: ->
     $('#tagline').bxSlider(
       adaptiveHeight: true
       # mode: 'fade'
@@ -35,8 +36,23 @@ class Common
       autoHover: true
       )
 
+  bxSliderClients: ->
+    $('#clients .owl-carousel').owlCarousel(
+      autoplay: true
+      autoplayTimeout: 2000
+      autoplayHoverPause:true
+      loop:true
+      responsiveClass: true
+      responsive:
+        0:
+          items: 1
+        600:
+          items: 2
+        1000:
+          items: 3
+      )
+
   accordion: ->
-    console.log('dupa')
     $('#accordion').accordion(
       header: "h3"
       heightStyle: "content"
