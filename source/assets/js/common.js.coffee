@@ -23,24 +23,26 @@ class Common
     # @validate()
     # @datepicker()
     @bxSliderHeader()
-    @bxSliderClients()
+    @sliderClients()
     @accordion()
 
   bxSliderHeader: ->
     $('#tagline').bxSlider(
-      adaptiveHeight: true
+      adaptiveHeight: false
       # mode: 'fade'
       # pager: false
       controls: false
       auto: true
       autoHover: true
+      speed: 500
+      pause: 2500
       )
 
-  bxSliderClients: ->
+  sliderClients: ->
     $('#clients .owl-carousel').owlCarousel(
       autoplay: true
-      autoplayTimeout: 2000
-      autoplayHoverPause:true
+      autoplayTimeout: 2500
+      autoplayHoverPause:false
       loop:true
       responsiveClass: true
       responsive:

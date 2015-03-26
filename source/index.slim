@@ -40,7 +40,9 @@ section#heading
 
 
 section#flow
-  h1 Od pomysłu do filmu
+  p Jesteśmy kreatywnym i małym studiem filmowym.
+  p Pozwala nam to realizować krótkie formy video szybko i bez zbędnych kosztów.
+  h1 Proces
   ul.steps
     li
       div
@@ -66,7 +68,7 @@ section#flow
 
 
 section#clients
-  .bcg data-anchor-target="#clients" data-bottom-top="background-position: 50% 300px;" data-top-bottom="background-position: 50% -200px;"
+  .bcg data-anchor-target="#clients" data-bottom-top="background-position: 50% 0;" data-top-bottom="background-position: 50% -200px;"
     h1 Zaufali nam
     .wrapper
       ul.owl-carousel
@@ -124,12 +126,12 @@ section#portfolio
             - list[1].each do |video|
               li
                 .wrapper
-                  = link_to "http://player.vimeo.com/video/#{video.vimeo}", {class: "thumb"} do
+                  = link_to "http://player.vimeo.com/video/#{video.vimeo}", {class: "thumb", width: "80%", height: "80%"} do
                     p = video.title
                     = image_tag "thumbs/" + video.image
 
 section#contact
-  .bcg data-anchor-target="#contact" data-bottom-top="background-position: 50% 200px;" data-top-bottom="background-position: 50% -200px;"
+  .bcg data-anchor-target="#contact" data-bottom-top="background-position: 50% 0px;" data-top-bottom="background-position: 50% -200px;"
     h1 Kontakt
     ul
       li
@@ -140,9 +142,10 @@ section#contact
         div
         div
           p Karol Flont
-          p tel. 22 465 98 01
-          p pon-pt 8:00-18:00
           p kom. 691 277 719
+          br
+          p Marcin Krykowski
+          p kom. 600 094 214
       li
         a href="https://www.facebook.com/pages/4K-Studio/166346293454085"
           div

@@ -1,6 +1,11 @@
 #flow
   background: $black
   color: $white
+  > p:first-of-type
+    font-size: 2em
+    margin-top: 6%
+  > p:nth-of-type(2)
+    font-size: 1.3em
   h1
     border-bottom: 1px solid $white
   ul
@@ -8,8 +13,9 @@
     @extend .row
     position: relative
     width: 90%
-    font-family: 'Segoe Print'
+    font-family: $font-pmarker, 'Segoe Print'
     padding-bottom: 40px !important
+    padding-left: 0
   li
     @extend .col-sm-2
     position: relative
@@ -36,7 +42,6 @@
     div
       background: image-url('flow_brief.png') 50% 50% no-repeat
       background-size: contain
-
   li:nth-of-type(2)
     div
       background: image-url('flow_meeting.png') 50% 50% no-repeat
@@ -67,7 +72,7 @@
 
   .arrow
     @extend .hidden-xs
-    font-family: 'Segoe Print'
+    font-family: $font-pmarker, 'Segoe Print'
     position: relative
     width: 40%
     height: 35px
