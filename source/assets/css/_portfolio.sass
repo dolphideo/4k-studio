@@ -36,15 +36,10 @@
     .wrapper
       position: relative
       margin: 0 auto 15% auto
-      width: 90%
       &:after
         content: ''
         display: block
         padding-top: 56.75%
-    img
-      width: 100%
-      height: 100%
-      border: 1px solid $white
 
     p
       display: none
@@ -57,48 +52,32 @@
       margin-right: 2%
     .thumb
       position: absolute
+      width: 100%
+      height: 100%
       top: 0
-      bottom: 0
-      right: 0
       left: 0
-      // border: 1px solid $white
+      border: 1px solid $white
       text-align: center
       overflow: hidden
-      &:hover
-        &:after
-          content: ""
-          position: absolute
-          top: 0
-          left: 0
-          width: 100%
-          height: 100%
-          background: image-url('play.png') 50% 15% no-repeat
-          background-size: 30%
-          background-color: rgba(0, 0, 0, 0.7)
-          border: 1px solid $white
+      .background
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: cover
+        width: 100%
+        height: 100%
+        &:hover .w2
+          display: inline-block
+      .w2
+        display: none
+        width: 100%
+        height: 100%
+        background: image-url('play.png') 50% 25% no-repeat
+        background-size: 30%
+        background-color: rgba(0, 0, 0, 0.7)
         p
           display: block
-        img
-          display: none
+          margin: 35% 5% 10% 5%
+
   #accordion
     padding-top: 1%
     padding-bottom: 2%
-  // #accordion ul
-  //   li:nth-of-type(1) .thumb
-  //     background: image-url('thumbs/74980318.png') 50% 50% no-repeat
-  //     background-size: 100% 100%
-  //   li:nth-of-type(2) .thumb
-  //     background: image-url('thumbs/81767257.png') 50% 50% no-repeat
-  //     background-size: 100% 100%
-  //   li:nth-of-type(3) .thumb
-  //     background: image-url('thumbs/82521685.png') 50% 50% no-repeat
-  //     background-size: 100% 100%
-  //   li:nth-of-type(4) .thumb
-  //     background: image-url('thumbs/82969314.png') 50% 50% no-repeat
-  //     background-size: 100% 100%
-  //   li:nth-of-type(5) .thumb
-  //     background: image-url('thumbs/83397726.png') 50% 50% no-repeat
-  //     background-size: 100% 100%
-  //   li:nth-of-type(6) .thumb
-  //     background: image-url('thumbs/87377017.png') 50% 50% no-repeat
-  //     background-size: 100% 100%

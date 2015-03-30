@@ -126,9 +126,10 @@ section#portfolio
             - list[1].each do |video|
               li
                 .wrapper
-                  = link_to "http://player.vimeo.com/video/#{video.vimeo}", {class: "thumb", width: "80%", height: "80%"} do
-                    p = video.title
-                    = image_tag "thumbs/" + video.image
+                  = link_to "http://player.vimeo.com/video/#{video.vimeo}", {class: "thumb"} do
+                    .background style="background-image: url(/assets/images/thumbs/#{video.image})"
+                      .w2
+                        p = video.title
 
 section#contact
   .bcg data-anchor-target="#contact" data-bottom-top="background-position: 50% 0px;" data-top-bottom="background-position: 50% -200px;"
