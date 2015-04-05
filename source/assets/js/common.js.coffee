@@ -25,6 +25,21 @@ class Common
     @bxSliderHeader()
     @sliderClients()
     @accordion()
+    @parralax()
+
+  parralax: ->
+    # console.log("ScrollMagic v%s loaded", ScrollMagic.version)
+
+    controller = new (ScrollMagic.Controller)(globalSceneOptions:
+      triggerHook: 'onEnter'
+      duration: '200%')
+
+    scene = new (ScrollMagic.Scene)(triggerElement: '#clients').setTween('#clients .bcg',
+      y: '50%'
+      ease: Linear.easeNone)
+
+    controller.addScene scene
+
 
   bxSliderHeader: ->
     $('#tagline').bxSlider(

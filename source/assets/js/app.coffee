@@ -5,10 +5,10 @@
 #= require vendor/jquery.fitvids
 #= require vendor/jquery.bxslider.min
 #= require vendor/owl.carousel.beta.min
-#= require vendor/skrollr.min
+#= require vendor/TweenMax.min
+#= require vendor/ScrollMagic
+#= require vendor/ScrollMagic.animation.gsap
 #= require bootstrap
 #= require colorbox
-#= require skrollr
 #= require smooth-scroll
 #= require common
-

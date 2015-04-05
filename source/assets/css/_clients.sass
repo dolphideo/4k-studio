@@ -1,18 +1,21 @@
 #clients
+  overflow: hidden
+  height: 60vh
   .wrapper
     @extend .center-block
     padding-top: 4%
     padding-bottom: 0
   .bcg
-    background-position: 100% 100%
-    background-repeat: no-repeat
-    background-attachment: fixed
-    background-size: cover
-    height: 100%
-    margin: 0 -15px -10px -15px
+    position: relative
     background-image: image-url('background-clients.jpg')
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    margin: 0 -15px -10px -15px
     background-color: $white
     padding-top: 30px
+    top: -28%
+    height: 120%
 
   ul
     @extend .center-block
