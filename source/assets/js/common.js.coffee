@@ -36,16 +36,15 @@ class Common
 
     scene = new (ScrollMagic.Scene)(triggerElement: '#clients').setTween('#clients .bcg',
       y: '50%'
-      ease: Linear.easeNone)
+      ease: Linear.easeNone).addTo(controller)
 
-    controller.addScene scene
-
+    scene2 = new (ScrollMagic.Scene)(triggerElement: '#contact').setTween('#contact .bcg',
+      y: '50%'
+      ease: Linear.easeNone).addTo(controller)
 
   bxSliderHeader: ->
     $('#tagline').bxSlider(
       adaptiveHeight: false
-      # mode: 'fade'
-      # pager: false
       controls: false
       auto: true
       autoHover: true
