@@ -6,6 +6,9 @@ categories:
   4: "PO GODZINACH"
 videos:
   0:
+    - title: 'MADAME'
+      vimeo: '123692978'
+      image: '123692978.png'
     - title: '26TH DIMENSION'
       vimeo: '123050758'
       image: '123050758.png'
@@ -15,9 +18,6 @@ videos:
     - title: 'EU BOOKSHOP'
       vimeo: '113213522'
       image: '113213522.png'
-    - title: 'STANY NAGŁE W GINEKOLOGII'
-      vimeo: '66113800'
-      image: '66113800.png'
   1:
     - title: 'MAKIJAŻ NA WIOSNĘ/LATO 2014'
       vimeo: '87377017'
